@@ -1,0 +1,134 @@
+a {
+    text-decoration: none;
+  }
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--third);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+    /* overflow: hidden; */
+}
+
+.nav-bar img {
+    padding: 16px 157px;
+    width: 157;
+    height: 63;
+}
+
+.nav-bar-items {
+    display: flex;
+    padding-right: 60px;
+}
+
+.nav-bar-item {
+    padding: 0px 66px;
+}
+
+.nav-bar-item a {
+    font-size: 25px;
+    font-weight: 400;
+    float: left;
+    display: block;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+}
+  
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 188px 33px 127px;
+}
+
+.footer p {
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--dark);
+    text-decoration: none;
+  }
+
+/* 
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+
+*/
+
+/* Tablet */
+@media only screen and (max-width: 768px) {
+    /* Nab Bar */
+    .nav-bar img {
+        padding: 24px 22px;
+        width: 121;
+        height: 45;
+    }
+    /* Hero */
+    /* Footer */
+    .footer {
+        padding: 0px 36px 23px 37px;
+      }
+      .footer .footer-title {
+        font-size: 16px;
+        font-weight: 400;
+      }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    /* Nab Bar */
+    .burger {
+        display: block;
+    }
+    .nav-bar-items {
+        display: none;
+    }
+    .nav-bar img {
+        padding: 22px 26px;
+        width: 58;
+        height: 22;
+    }
+    /* Hero */
+    /* Footer */
+    .footer {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        padding-bottom: 12px;
+      }
+
+      .footer p {
+        padding-bottom: 4px;
+        text-align: center;
+      }
+}
+
+/* @media screen and (max-width: 600px) {
+    .nav-bar-item a:not(:first-child) {display: none;}
+    .nav-bar-item a.burger {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav-bar-item.responsive {position: relative;}
+    .nav-bar-item.responsive a.burger {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-bar-item.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */

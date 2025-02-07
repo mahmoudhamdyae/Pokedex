@@ -1,0 +1,56 @@
+:root {
+    /* Colors */
+    --third: #F5DB13;
+    --primary: #F2B807;
+    --secondary: #F28F16;
+    --danger: #D93E30;
+    --white: #F6F7F9;
+    --dark: #212121;
+
+    /* Margins */
+    --margin120: 120px;
+    --margin96: 96px;
+    --margin80: 80px;
+    --margin64: 64px;
+    --margin32: 32px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", "sans-serif";
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    font-family: "Karla", serif;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 64;
+}
+
+h3 {
+    font-size: 36;
+}
+
+h4 {
+    font-size: 24;
+}
+
+h5 {
+    font-size: 18;
+}
+
+h6 {
+    font-size: 12;
+}
+
+p {
+    font-size: 16px;
+}
